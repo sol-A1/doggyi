@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DogTrainerAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>DogTrainerAI</h1>
+      </header>
+      <p>Use AI to help train your dogs!</p> 
+      <form id="form">
+        <div class="question">
+          <label for="skills">What breed is your dog?</label>
+          <input type="text" id="skills" name="skills" />
+        </div>
+        <div class="question">
+          <label for="age">How old is your dog?</label>
+          <input type="text" id="age" name="age" />
+        </div>
+        <div class="question">
+          <label for="behavior">What specific behavior or issue would you like to address in your dog's training?</label>
+          <input type="text" id="behavior" name="behavior" />
+        </div>
+        <button id="generate-btn">HELP!</button>
+      </form>
+      <div id="chat-container"></div>
+      <footer>
+        <div class="warning">The AI won't take responsibility for your choices, but it'll make them for you!</div>
+      </footer>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
