@@ -94,7 +94,7 @@ const handleSubmit = async (e) => {
   // specific message div 
   const messageDiv = document.getElementById(uniqueId)
 
-  const response = await fetch('http://localhost:5003', {
+  const response = await fetch('https://doggie87.onrender.com', {
     method: 'POST',
    
 
