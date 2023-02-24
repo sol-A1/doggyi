@@ -38,6 +38,8 @@ const typeText = (messageDiv, text) => {
       } else if (line.trim().startsWith("Decision:")) {
         messageDiv.querySelector('.bot-text').innerHTML += `<br />\n<b>${line}</b><br />\n`; // Add bold tags to Decision
         messageDiv.querySelector('.bot-text').innerHTML += '<br />\n'; // Add line break
+      } else if (/^\d+\.\s/.test(line.trim())) { // check if line starts with a number followed by a period
+        messageDiv.querySelector('.bot-text').innerHTML += `${line}<br />\n<br />\n`; // Add two line breaks after numbered points
       } else {
         messageDiv.querySelector('.bot-text').innerHTML += `${line}<br />\n`; // Add line break
       }
@@ -48,6 +50,7 @@ const typeText = (messageDiv, text) => {
     }
   }, 50);
 }
+
 
 const loader = (messageDiv) => {
   const loaderDiv = messageDiv.querySelector('.loader')
