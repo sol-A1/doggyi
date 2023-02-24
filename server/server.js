@@ -31,7 +31,7 @@ app.post('/', async (req, res) => {
       model: 'text-davinci-003',
 prompt: `Your client has a ${skills} that is ${age} years old and is exhibiting the following behavior issues: ${behavior}. As an expert in dog training, please provide a step-by-step numbered training plan that addresses each issue. Your plan should include specific techniques, exercises, and strategies to correct the behavior and reinforce positive behavior. Additionally, provide tips on how to maintain the dog's good behavior in the long term.`,
 temperature: 0,
-max_tokens: 3800,
+max_tokens: 3500,
 top_p: 1,
 frequency_penalty: 0,
 presence_penalty: 0,
