@@ -29,11 +29,7 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
       model: 'text-davinci-003',
-prompt: `You're an expert in dog training, and a client has approached you with a ${skills} that is ${age} old and has the following behavior issues:${behavior}. 
-
-Please provide a detailed plan for training this dog, including specific techniques, exercises, and strategies to address each behavior. 
-
-Please write a numbered training plan that will help the owner correct the dog's behavior. Your plan should include specific techniques, exercises, and strategies to address each issue, as well as tips for reinforcing positive behavior. The owner is looking for a well-behaved, obedient, and happy dog.`,
+prompt: `Your client has a ${skills} that is ${age} years old and is exhibiting the following behavior issues: ${behavior}. As an expert in dog training, please provide a step-by-step numbered training plan that addresses each issue. Your plan should include specific techniques, exercises, and strategies to correct the behavior and reinforce positive behavior. Additionally, provide tips on how to maintain the dog's good behavior in the long term.`,
 temperature: 0,
 max_tokens: 3800,
 top_p: 1,
