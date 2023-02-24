@@ -23,13 +23,21 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 5px;
+  margin-top: 10px;
   border-radius: 10px;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97%;
+  border: 2px solid green; /* add a green border */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); /* add a box-shadow */
 }
 
 h1 {
@@ -43,10 +51,10 @@ h1 {
 }
 
 p {
-  margin-top: 30px;
+  margin-top: 60px;
   color: #fff;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-weight: normal;
   font-family: 'Russo One', sans-serif;
 }
@@ -86,6 +94,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   margin-top: 10px;
+  margin-bottom: 8px;
   padding: 10px 25px;
   transition: background-color 0.15s ease-in-out;
   font-size: 0.8em;
@@ -141,6 +150,7 @@ button:hover {
 footer {
   display: flex;
   margin-top: 10px;
+  margin-bottom: -15px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -148,7 +158,9 @@ footer {
   color: white;
   padding: 10px;
   border-radius: 10px;
-  text-align: center; /* Add this line to center the text */
+  text-align: center;
+  border: 2px solid green; /* add a green border */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); /* add a box-shadow */
 }
 
 .warning {
@@ -156,7 +168,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: normal;
-  font-family: 'Russo One', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Monsteratt', sans-serif;
 }
